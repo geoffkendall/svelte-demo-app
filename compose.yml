@@ -1,0 +1,14 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=pgadmin
+      - POSTGRES_PASSWORD=hunter2
+      - POSTGRES_DB=sveltekit_demo_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - sveltekit-demo-data:/var/lib/postgresql/data
+
+volumes:
+  sveltekit-demo-data:
