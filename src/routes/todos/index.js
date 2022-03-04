@@ -1,4 +1,7 @@
-import prisma from '$lib/db';
+import pkg from '@prisma/client'
+const { PrismaClient } = pkg
+
+const prisma = new PrismaClient();
 
 export const get = async ({ locals }) => {
 	// locals.userid comes from src/hooks.js
