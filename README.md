@@ -1,7 +1,10 @@
 # SvelteKit Demo App
 ## Using Prisma and Postgres
 
-The SvelteKit Demo app, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and updated to use [Prisma](https://www.prisma.io/) and [Postgres](https://www.postgresql.org/).  Hosted on [Heroku](https://www.heroku.com): https://svelte-blog-demo-app.herokuapp.com/todos
+The SvelteKit Demo app, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte), and updated to use [Prisma](https://www.prisma.io/) and [Postgres](https://www.postgresql.org/).  ~~Hosted on [Heroku](https://www.heroku.com): https://svelte-blog-demo-app.herokuapp.com/todos~~ Since [Heroku eliminated free plans](https://help.heroku.com/RSBRUH58/removal-of-heroku-free-product-plans-faq), the app is now hosted on [Railway](https://railway.app/): https://web-production-87f5.up.railway.app/todos.
+
+## Heroku to Railway migration
+Migrating the app from Heroku to [Railway](https://railway.app/) was super easy.  They have a [blog post](https://blog.railway.app/p/railway-heroku-rails) that walks you through it.  The post is based on migrating a Rails app, but the steps were fairly similar -- deploy the repo from GitHub, import your environment vairables, and add a new Postgres service.  Add, then remove, a new environment variable after adding the Postgres service, which will trigger a deploy.  Test the URL and you should be in business!
 
 ## Developing
 
